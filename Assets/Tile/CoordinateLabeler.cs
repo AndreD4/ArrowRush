@@ -14,6 +14,7 @@ public class CoordinateLabeler : MonoBehaviour
     void Awake() 
     {
       label = GetComponent<TextMeshPro>();
+      DisplayCoordinates();
     }
     void Update()
     {
@@ -25,8 +26,8 @@ public class CoordinateLabeler : MonoBehaviour
 
     void DisplayCoordinates()
     {
-      coordinates.x = Mathf.RoundToInt(transform.parent.position.x);
-      coordinates.y = Mathf.RoundToInt(transform.parent.position.z);
+      coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
+      coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
 
       label.text = coordinates.x + "," + coordinates.y;
     }

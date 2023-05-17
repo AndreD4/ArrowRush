@@ -1741,6 +1741,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5703789197559696306, guid: c18f28d16a6d0b742b0190f44de7f373, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1483104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703789197559696306, guid: c18f28d16a6d0b742b0190f44de7f373, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000049710274
+      objectReference: {fileID: 0}
     - target: {fileID: 8150988882713185435, guid: c18f28d16a6d0b742b0190f44de7f373, type: 3}
       propertyPath: m_Name
       value: Tile
