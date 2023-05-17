@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5703789197559696306}
   - component: {fileID: 758236436929154665}
   - component: {fileID: 6254465400772120148}
+  - component: {fileID: 4451772311009033226}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -99,-99
+  m_text: --,--
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -250,6 +251,18 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &4451772311009033226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4400773095788083501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8e019b9ae86848843aa0f113cb362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8150988882713185435
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 832140030962335232}
+  - component: {fileID: 5005594733575253033}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -282,3 +296,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5005594733575253033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8150988882713185435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8e019b9ae86848843aa0f113cb362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

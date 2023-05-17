@@ -17,7 +17,12 @@ public class CoordinateLabeler : MonoBehaviour
     {
         if(!Application.isPlaying)
         {
-          //do something
+          DisplayCoordinates();
         }
+    }
+
+    void DisplayCoordinates()
+    {
+      label.text = "--,--";
     }
 }
