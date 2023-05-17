@@ -21,6 +21,7 @@ public class CoordinateLabeler : MonoBehaviour
         if(!Application.isPlaying)
         {
           DisplayCoordinates();
+          UpdateObjectName();
         }
     }
 
