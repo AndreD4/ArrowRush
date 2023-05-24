@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
+  [SerializeField] List<WayPoint> path = new List<WayPoint>();
+
+    void Start() 
+    {
+      PrintWayPointName();
+    }
+
+    void PrintWayPointName()
+    {
+      foreach(WayPoint wayPoint in path)
+      {
+        Debug.Log(wayPoint.name);
+      }
+    }
    /*
     LOGIC!!!!!
     We're going to start our routine, which starts our for loop.
@@ -18,4 +32,7 @@ public class EnemyMover : MonoBehaviour
     be broken out of, and then we'll go onto the next waypoint in our path.
     That whole system will continue to loop until we've run out of waypoints to visit.
   */
+
+    
+
 }
