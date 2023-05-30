@@ -8,7 +8,7 @@ public class TargetLocator : MonoBehaviour
     [SerializeField] Transform target;
     void Start()
     {
-        
+        target = FindObjectOfType<EnemyMover>().transform;
     }
 
     
@@ -19,6 +19,6 @@ public class TargetLocator : MonoBehaviour
 
     void AimWeapon()
     {
-      
+        weapon.LookAt(target);
     }
 }
