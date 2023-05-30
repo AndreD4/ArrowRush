@@ -19,4 +19,12 @@ public class Enemy : MonoBehaviour
       if(bank == null) {return;}
       bank.Deposit(goldReward);
     }
+
+    public void StealGold()
+    {
+      if(bank == null) {return;}
+      bank.Withdraw(goldReward);
+    }
+
+
 }
