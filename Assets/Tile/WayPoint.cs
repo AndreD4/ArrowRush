@@ -10,6 +10,6 @@ public class WayPoint : MonoBehaviour
   {
     if(isPlaceable)
       Instantiate(towerPrefab,transform.position, Quaternion.identity);
-      
+      isPlaceable = false;
   }
 }
