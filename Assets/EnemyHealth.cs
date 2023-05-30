@@ -9,12 +9,17 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
-        
+        currentHitPoints = maxHitPoints;
     }
 
     
-    void Update()
+    void OnParticleCollision(GameObject other) 
     {
-        
+       ProcessHit();
+    }
+
+    void ProcessHit()
+    {
+
     }
 }
