@@ -11,6 +11,7 @@ public class EnemyMover : MonoBehaviour
     void Start() 
     {
       FindPath();
+      ReturnToStart();
       StartCoroutine(FollowPath());
     }
 
@@ -24,6 +25,11 @@ public class EnemyMover : MonoBehaviour
       {
          path.Add(child.GetComponent<WayPoint>());
       }
+    }
+
+    void ReturnToStart()
+    {
+      transform.position = path[0].transform.position;
     }
 
 
