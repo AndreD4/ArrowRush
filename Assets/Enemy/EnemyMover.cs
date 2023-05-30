@@ -15,6 +15,8 @@ public class EnemyMover : MonoBehaviour
 
     void FindPath()
     {
+      path.Clear();
+
       GameObject parent = GameObject.FindGameObjectWithTag("Path");
 
       foreach(Transform child in parent.transform)
