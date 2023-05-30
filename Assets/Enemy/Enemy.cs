@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     public void RewardGold()
     {
+      if(bank == null) {return;}
       bank.Deposit(goldReward);
     }
 }
