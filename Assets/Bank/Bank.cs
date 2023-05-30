@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Bank : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] int startingBalance = 150;
+    [SerializeField] int currentBalance;
+    public int CurrnetBalance {get{return currentBalance; }}
+    
+
+    public void Deposit(int amount)
     {
-        
+      currentBalance += Mathf.Abs(amount);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Withdraw(int amount)
     {
-        
+      currentBalance += Mathf.Abs(amount);
     }
+
 }
