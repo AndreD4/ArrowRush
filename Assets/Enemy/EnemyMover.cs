@@ -9,13 +9,15 @@ public class EnemyMover : MonoBehaviour
     void Start() 
     {
       PrintWayPointName();
+      
     }
 
-    void PrintWayPointName()
+    IEnumerator PrintWayPointName() 
     {
       foreach(WayPoint wayPoint in path)
       {
         Debug.Log(wayPoint.name);
+        yield return new WaitForSeconds(1f);
       }
     }
    
