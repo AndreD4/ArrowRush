@@ -34,7 +34,14 @@ public class CoordinateLabeler : MonoBehaviour
 
     void ColorCoordinates()
     {
-      
+      if(wayPoint.IsPlaceable)
+      {
+        label.color = defaultColor;
+      }
+      else
+      {
+        label.color = blockedColor;
+      }
     }
 
     void DisplayCoordinates()
