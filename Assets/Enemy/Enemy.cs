@@ -13,4 +13,9 @@ public class Enemy : MonoBehaviour
     {
        bank = FindObjectOfType<Bank>();
     }
+
+    public void RewardGold()
+    {
+      bank.Deposit(goldReward);
+    }
 }
