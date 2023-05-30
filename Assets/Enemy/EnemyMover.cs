@@ -19,9 +19,9 @@ public class EnemyMover : MonoBehaviour
       {
         Vector3 startPosition = transform.position;
         Vector3 endPosition = wayPoint.transform.position;
+        float travelPercent = 0f;
 
-        transform.position = wayPoint.transform.position;
-        yield return new WaitForSeconds(waitTime);
+        transform.position = Vector3.Lerp(startPosition,endPosition,travelPercent);
       }
     }
    
