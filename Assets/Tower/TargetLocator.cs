@@ -6,15 +6,18 @@ public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform weapon;
     [SerializeField] Transform target;
-    void Start()
-    {
-        target = FindObjectOfType<EnemyMover>().transform;
-    }
+    
 
     
     void Update()
     {
+        FindClosestTarget();
         AimWeapon();
+    }
+
+    void FindClosestTarget()
+    {
+      
     }
 
     void AimWeapon()
