@@ -16,14 +16,14 @@ public class Enemy : MonoBehaviour
 
     public void RewardGold()
     {
-      if(bank == null) {return;}
+      if(bank == null) { return; }
       bank.Deposit(goldReward);
     }
 
     public void StealGold()
     {
-      if(bank == null) {return;}
-      bank.Withdraw(goldReward);
+      if (bank == null) { return; }
+      bank.Withdraw(goldPenalty);
     }
 
 

@@ -8,11 +8,19 @@ public class EnemyMover : MonoBehaviour
   [SerializeField] List<WayPoint> path = new List<WayPoint>();
   [SerializeField] [Range(0f,5f)] float Speed = 1f;
 
+   Enemy enemy;
+   
+
     void OnEnable() 
     {
       FindPath();
       ReturnToStart();
       StartCoroutine(FollowPath());
+    }
+
+    void start() 
+    {
+      enemy = GetComponent<Enemy>();
     }
 
     void FindPath()
@@ -51,7 +59,10 @@ public class EnemyMover : MonoBehaviour
         }
       }
 
+      
+      enemy.StealGold();
       gameObject.SetActive(false);
+
     }
    
 }
