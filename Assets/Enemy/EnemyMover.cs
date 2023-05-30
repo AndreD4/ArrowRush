@@ -21,7 +21,13 @@ public class EnemyMover : MonoBehaviour
         Vector3 endPosition = wayPoint.transform.position;
         float travelPercent = 0f;
 
-        transform.position = Vector3.Lerp(startPosition,endPosition,travelPercent);
+
+        while(travelPercent <1f)
+        {
+          travelPercent +=Time.deltaTime;
+          transform.position = Vector3.Lerp(startPosition,endPosition,travelPercent);
+          yield return new WaitForEndOfFrame();
+        }
       }
     }
    
