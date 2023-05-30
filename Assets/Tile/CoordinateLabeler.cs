@@ -7,13 +7,18 @@ using TMPro;
 [ExecuteAlways]
 public class CoordinateLabeler : MonoBehaviour
 {
+    [SerializeField] Color defaultColor = Color.white;
+    [SerializeField] Color blockedColor = Color.grey;
+
     TextMeshPro label;
     Vector2Int coordinates = new Vector2Int();
+    WayPoint wayPoint;
     
 
     void Awake() 
     {
       label = GetComponent<TextMeshPro>();
+      wayPoint = GetComponentInParent<WayPoint>();
       DisplayCoordinates();
     }
     void Update()
@@ -23,6 +28,13 @@ public class CoordinateLabeler : MonoBehaviour
           DisplayCoordinates();
           UpdateObjectName();
         }
+
+        ColorCoordinates();
+    }
+
+    void ColorCoordinates()
+    {
+      
     }
 
     void DisplayCoordinates()
