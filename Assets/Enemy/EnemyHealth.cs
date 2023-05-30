@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
         currentHitPoints = maxHitPoints;
     }
 
-    void start()
+    void Start()
     {
       enemy = GetComponent<Enemy>();
     }

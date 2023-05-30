@@ -9,20 +9,20 @@ public class Enemy : MonoBehaviour
 
   Bank bank;
 
-  void start()
+  void Start()
   {
     bank = FindObjectOfType<Bank>();
   }
 
   public void RewardGold()
   {
-    if (bank == null) { return; }
+    if(bank == null) { return; }
     bank.Deposit(goldReward);
   }
 
   public void StealGold()
   {
-    if (bank == null) { return; }
+    if(bank == null) { return; }
     bank.Withdraw(goldPenalty);
   }
 }

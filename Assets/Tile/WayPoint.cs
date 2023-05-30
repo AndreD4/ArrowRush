@@ -13,6 +13,7 @@ public class WayPoint : MonoBehaviour
   void OnMouseDown() 
   {
     if(isPlaceable)
+      //towerPrefab.CreateTower(towerPrefab, transform.position);
       Instantiate(towerPrefab,transform.position, Quaternion.identity);
       isPlaceable = false;
   }

@@ -18,7 +18,7 @@ public class EnemyMover : MonoBehaviour
       StartCoroutine(FollowPath());
     }
 
-    void start() 
+    void Start() 
     {
       enemy = GetComponent<Enemy>();
     }
