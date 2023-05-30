@@ -17,7 +17,7 @@ public class TargetLocator : MonoBehaviour
 
     void FindClosestTarget()
     {
-      
+      Enemy[] enemies = FindObjectsOfType<Enemy>();
     }
 
     void AimWeapon()
