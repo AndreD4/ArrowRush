@@ -33,7 +33,6 @@ public class EnemyHealth : MonoBehaviour
         {
           gameObject.SetActive(false);
           enemy.RewardGold();
-          
         }
     }
 }
