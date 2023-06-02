@@ -1,4 +1,4 @@
-# ArrowRush
+# ArrowRush (Prototype)
 Tower Defense Game
 
 # Game design
