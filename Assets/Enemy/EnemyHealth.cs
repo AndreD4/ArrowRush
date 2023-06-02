@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int maxHitPoints = 5;
+    [SerializeField] int difficultyRamp = 1;
     int currentHitPoints = 0;
 
     Enemy enemy;
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHitPoints <= 0)
         {
           gameObject.SetActive(false);
+          maxHitPoints += difficultyRamp;
           enemy.RewardGold();
         }
     }
