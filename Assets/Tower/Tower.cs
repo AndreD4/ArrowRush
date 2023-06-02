@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    //  void CreateTower(Tower tower, Vector3 position)
-    //{
-      //Instantiate(tower.gameObject, position,Quaternion.identity);
-    //}
+      public bool CreateTower(Tower tower, Vector3 position)
+    {
+      Instantiate(tower.gameObject, position, Quaternion.identity);
+      return true;
+    }
 }
