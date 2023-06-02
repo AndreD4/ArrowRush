@@ -32,13 +32,24 @@ public class EnemyMover : MonoBehaviour
 
       foreach(Transform child in parent.transform)
       {
-         path.Add(child.GetComponent<WayPoint>());
+         WayPoint waypoint = child.GetComponent<WayPoint>();
+
+         if (waypoint !=null)
+         {
+           path.Add(waypoint);
+         }
       }
     }
 
     void ReturnToStart()
     {
       transform.position = path[0].transform.position;
+    }
+
+    void FinishPath()
+    {
+      enemy.StealGold();
+      gameObject.SetActive(false);
     }
 
 
@@ -61,8 +72,7 @@ public class EnemyMover : MonoBehaviour
       }
 
       
-      enemy.StealGold();
-      gameObject.SetActive(false);
+      FinishPath();
 
     }
    
