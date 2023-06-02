@@ -1,6 +1,9 @@
 # ArrowRush (Prototype)
 Tower Defense Game
 
+#Play Prototype
+https://sharemygame.com/@AndreMayn/arrow-rush
+
 # Game design
 *Place defensive structures
 
