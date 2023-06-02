@@ -17,11 +17,11 @@ Player Experience:
 Core Mechanic:
 
 *Using limited resources,strategically place towers to stop
-enemies from reaching their gaol.
+enemies from reaching their goal.
 
 Core game loop:
 
-*Survive against waves of eneimes for as long as possible!
+*Survive against waves of enemies for as long as possible!
 # Tech Setup
 Platform:  PC/MAC/LINUX
 
